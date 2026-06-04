@@ -42,6 +42,7 @@ ks.test(scale(data$punt_sociales_ciudadanas), "pnorm")
 # Se utiliza cuando se quiere comparar dos grupos y no se cumple el supuesto de normalidad.
 U1<- wilcox.test(punt_sociales_ciudadanas ~ PDET, data = data)
 U1
+#Hay una diferencia estadísticamente significativa entre los grupos. 
 
 # 5.3 Hacer gráfico boxplot. 
 #Buena opción para comparar la distribución de puntajes entre grupos. 
