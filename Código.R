@@ -12,9 +12,8 @@ data <- data %>%
   select(estu_consecutivo, cole_calendario, cole_naturaleza, estu_genero, estu_etnia, estu_cod_reside_mcpio, desemp_sociales_ciudadanas, percentil_sociales_ciudadanas, punt_sociales_ciudadanas, punt_global)
 write.csv(data, "C:/Users/sofig/Downloads/Ciudadanas.csv", row.names = FALSE)
 
-# 3. Poner la base de datos Examen Saber 11 en un objeto "data" (para no dañar la original)
-# 3.1. Poner la base de datos con municipios pdet en un objeto. 
-data<- read.csv("~/Downloads/Ciudadanas.csv", sep=";")
+# 3. Poner la base de datos Examen Saber 11 en un objeto "data" (para no dañar la original) y poner la base de datos con municipios pdet en un objeto. 
+data<- read.csv("~/Downloads/Ciudadanas.csv")
 pdet<- read.csv("~/Downloads/Municipios_PDET_20260601.csv")
 
 # 4. Crear una nueva columna "PDET" para clasificar los datos en Pdet= 1 NoPDET= 0. Se compara los municipios de "data" con "pdet", los códigos que coincidan son PDET
@@ -35,6 +34,7 @@ data <- data %>%
 # 5.1. Verificar la clase de las variables y la normalidad de la muestra
 class(data$punt_sociales_ciudadanas)
 class(data$PDET)
+data$PDET<-as.factor(data$PDET)
 
 ks.test(scale(data$punt_sociales_ciudadanas), "pnorm")
 
