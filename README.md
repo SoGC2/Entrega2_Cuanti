@@ -17,7 +17,6 @@ En el segundo análisis se va a volver a comparar el desempeño entre el grupo P
 **Bases de datos utilizadas:**
 
 **Examen_Saber_11_20242:**
-
 Para este análisis se va a utilizar como base de datos principal "Examen_Saber_11_20242". Esta tiene los resultados de todos los estudiantes que presentaron el Examen Saber 11 en el período 2024-2. Por temas de peso, el archivo compartido en el repositorio solo incluye las variables generales de caracterización de estudiantes e instituciones educativas, y las correspondientes a Competencias Ciudadanas. Esto con el fin de poder cumplir con el rango de peso aceptado por GitHub.
 
 **Variables:**
@@ -33,7 +32,6 @@ Puntaje global: punt_global.
 Tipo de colegio: cole_calendario, cole_naturaleza.
 
 **Municipios_PDET_20260601:**
-
 Como base de datos secundaria se va a utilizar "Municipios_PDET_20260601". Esta base de datos va a permitir crear los grupos de estudiantes PDET y NoPDET. 
 
 **Variables:** 
