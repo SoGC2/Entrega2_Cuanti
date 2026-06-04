@@ -46,7 +46,7 @@ Decreto 893 DE 2017 [Presidencia de la República de Colombia]. Por el cual se c
 
 Palacios Mena, N. (2018). El Currículo de Ciencias Sociales y las Pruebas Saber 11 en Colombia: Consonancias y Disonancias. Voces Y Silencios. *Revista Latinoamericana De Educación, 9*(2), 80-106. https://doi.org/10.18175/vys9.2.2018.06 
 
-**URls bases de datos:** 
+**URLs bases de datos:** 
 
 Examen Saber 11 2024-2: https://icfesgovco.sharepoint.com/sites/BasesDataIcfes/Documentos%20compartidos/Forms/AllItems.aspx?id=%2Fsites%2FBasesDataIcfes%2FDocumentos%20compartidos%2F01%5FExamen%20Saber%2011%C2%B0%2F01%5FBases%20Nacionales&p=true&ga=1
 
