@@ -4,6 +4,8 @@ library(dplyr)
 install.packages(ggplot2)
 library(ggplot2)
 ?ggplot
+install.packages("sjPlot")
+library(sjPlot)
 
 # 2.Poner la base de datos Ciudadanas en un objeto "data" (para no dañar la original) y poner la base de datos con municipios pdet en un objeto. 
 data<- read.csv("~/Downloads/Ciudadanas.csv.gz")
@@ -78,7 +80,7 @@ summary(lm1)
 pred <- data %>%
   mutate(pred = predict(lm1))
 
-# Gráfico de líneas
+# 5.3.1. Gráfico de líneas
 # x: El efecto principal, PDET. 
 # Group: Lo que modifica el efecto principal, se divide en grupos. 
 ggplot(pred, aes(x = PDET, y = pred, color = cole_naturaleza, group = cole_naturaleza)) +
@@ -92,4 +94,23 @@ ggplot(pred, aes(x = PDET, y = pred, color = cole_naturaleza, group = cole_natur
     1 = Oficial"
   ) +
   theme_minimal()
+
+#5.3.2. Tabla
+library(sjPlot)
+
+tab_model(
+  lm1,
+  file = "outputs/tabla_modelo.html",
+  show.ci = TRUE,
+  show.se = TRUE,
+  show.stat = TRUE,
+  dv.labels = "Puntaje",
+  pred.labels = c(
+    "(Intercepto)",
+    "PDET (1 vs 0)",
+    "Naturaleza (1 vs 0)",
+    "Interacción PDET × Naturaleza"
+  )
+)
+
 
