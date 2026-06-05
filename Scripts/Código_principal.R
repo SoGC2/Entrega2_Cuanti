@@ -92,3 +92,4 @@ ggplot(pred, aes(x = PDET, y = pred, color = cole_naturaleza, group = cole_natur
     1 = Oficial"
   ) +
   theme_minimal()
+
