@@ -7,8 +7,13 @@ Competencias ciudadanas es una sección de las pruebas del Estado.  Su objetivo 
 El Programa de Desarrollo con Enfoque Territorial (PDET) fue diseñado en el marco del Acuerdo de Paz (2016) entre el gobierno y la guerrilla FARC-EP. Las 16 subregiones PDET cumplen con cuatro criterios: "i) los niveles de pobreza, en particular, de pobreza extrema y de necesidades insatisfechas; ii) el grado de afectación derivado del conflicto; iii) la debilidad de la institucionalidad administrativa y de la capacidad de gestión; y iv) la presencia de cultivos de uso ilícito y de otras economías ilegítimas" (Decreto 893 DE 2017).
 
 ## Estructura Repositorio
+El repositorio cuenta con cuatro secciones principales:
+- Scripts
+- Data
+- Outputs
+- README
 
-## **Análisis**
+## **Justifiación metoddológica**
 
 ### **Primer análisis:**
 En este estudio se considera que los estudiantes pertenecientes a una subregión PDET pueden tener un desempeño diferencial en comparación con estudiantes NoPDET en la sección de Competencias Ciudadanas. Esto se debe a que la relación con la institucionalidad y el contexto en el que viven puede impactar la forma en que construyen su identidad ciudadana. Dicha identidad puede ir alineada o no con el discurso de ciudadanía neoliberal que se promueve dentro de la prueba (Palacios Mena, 2018). Para probar la hipótesis se va a realizar un *Mann–Whitney U Test* para comparar las medias de los dos grupos (PDET y NoPDET). 
