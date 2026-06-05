@@ -7,24 +7,19 @@ Competencias ciudadanas es una sección de las pruebas del Estado.  Su objetivo 
 El Programa de Desarrollo con Enfoque Territorial (PDET) fue diseñado en el marco del Acuerdo de Paz (2016) entre el gobierno y la guerrilla FARC-EP. Las 16 subregiones PDET cumplen con cuatro criterios: "i) los niveles de pobreza, en particular, de pobreza extrema y de necesidades insatisfechas; ii) el grado de afectación derivado del conflicto; iii) la debilidad de la institucionalidad administrativa y de la capacidad de gestión; y iv) la presencia de cultivos de uso ilícito y de otras economías ilegítimas" (Decreto 893 DE 2017).
 
 ## Estructura Repositorio
-El repositorio cuenta con cuatro secciones principales:
 
-### - Scripts
-  Código_principal.R: El código contiene todo el análisis de datos.
-  
-  Reducir_Examen_Saber_11_2024.R: El código contiene cómo se redujo la base de datos original Examen_Saber_11_20242
-  
-### - Data
-  Ciudadanas
-  
-  Municipios_PDET_20260601
-  
-### - Outputs
-  Gráfico 1er Análisis
-  
-  Gráfico 2do Análisis
-  
-### - README
+El repositorio cuenta con las siguientes secciones:
+
+```bash
+Entrega2_Cuanti/
+├── Scripts/
+├── data/
+├── Outputs/
+├── .gitgnnore
+├── Entrega2_Cuanti.Rproj
+├── README.md
+```
+
 
 ## **Justificación metodológica**
 
@@ -41,22 +36,24 @@ Para este análisis se va a utilizar como base de datos principal "Ciudadanas", 
 
 #### **Variables:**
 
-Para identificación del estudiante: estu_consecutivo
-
-Demográficas: estu_genero, estu_etnia, estu_cod_reside_mcpio
-
-Sección Competencias Ciudadanas: desemp_sociales_ciudadanas, percentil_sociales_ciudadanas, punt_sociales_ciudadanas.
-
-Puntaje global: punt_global.
-
-Tipo de colegio: cole_calendario, cole_naturaleza.
+```bash
+Ciudadanas/
+├── Para identificación del estudiante: estu_consecutivo
+├── Demográficas: estu_genero, estu_etnia, estu_cod_reside_mcpio
+├── Sección Competencias Ciudadanas: desemp_sociales_ciudadanas, percentil_sociales_ciudadanas, punt_sociales_ciudadanas
+├── Puntaje global: punt_global
+├── Tipo de colegio: cole_calendario, cole_naturaleza
+```
 
 ### **Municipios_PDET_20260601:**
 Como base de datos secundaria se va a utilizar "Municipios_PDET_20260601". Esta base de datos va a permitir crear los grupos de estudiantes PDET y NoPDET. 
 
 #### **Variables:** 
 
-Código del Municipio: CodigoMunicipio, esta se contrasta con estu_cod_reside_mcpio para crear la variable PDET.
+```bash
+Municipios_PDET/
+├── Código del Municipio: CodigoMunicipio, esta se contrasta con estu_cod_reside_mcpio para crear la variable PDET.
+```
 
 ## **Referencias:**
 
