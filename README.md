@@ -8,37 +8,52 @@ El Programa de Desarrollo con Enfoque Territorial (PDET) fue diseñado en el mar
 
 ## Estructura Repositorio
 
-## **Análisis**
+El repositorio cuenta con las siguientes secciones:
+
+```bash
+Entrega2_Cuanti/
+├── Scripts/
+├── data/
+├── Outputs/
+├── .gitgnnore
+├── Entrega2_Cuanti.Rproj
+├── README.md
+```
+
+
+## **Justificación metodológica**
 
 ### **Primer análisis:**
 En este estudio se considera que los estudiantes pertenecientes a una subregión PDET pueden tener un desempeño diferencial en comparación con estudiantes NoPDET en la sección de Competencias Ciudadanas. Esto se debe a que la relación con la institucionalidad y el contexto en el que viven puede impactar la forma en que construyen su identidad ciudadana. Dicha identidad puede ir alineada o no con el discurso de ciudadanía neoliberal que se promueve dentro de la prueba (Palacios Mena, 2018). Para probar la hipótesis se va a realizar un *Mann–Whitney U Test* para comparar las medias de los dos grupos (PDET y NoPDET). 
 
 ### **Segundo Análisis:** 
-En el segundo análisis se va a volver a comparar el desempeño entre el grupo PDET y el NoPDet, pero en este caso se va a incluir la Naturaleza del Colegio (Oficial/No Oficial) como variable interviniente. Esto se hace debido a que se considera que en Colombia existe un apartheid educativo, en donde las personas de clase alta y media están inscritas en colegios privados de alta calidad, mientras las personas de clase baja están inscritas en colegios oficiales de baja calidad (Corredor y Álvarez-Rivadulla, 2024). Lo anterior muestra que la naturaleza del colegio puede influir significativamente en los resultados obtenidos por los estudiantes, por lo que es importante incluirla como variable interviniente.
+En el segundo análisis se va a realizar una regresión lineal múltiple. En esta se tienen como variables independientes PDET (PDET/NoPDET) y Naturaleza del Colegio (Oficial/No Oficial), y como variable dependiente Puntaje del estudiante (1-100). Esto se hace debido a que se considera que en Colombia existe un apartheid educativo, en donde las personas de clase alta y media están inscritas en colegios privados de alta calidad, mientras las personas de clase baja están inscritas en colegios oficiales de baja calidad (Corredor y Álvarez-Rivadulla, 2024). Lo anterior muestra que la naturaleza del colegio puede influir significativamente en los resultados obtenidos por los estudiantes, por lo que es importante incluirla como variable.
 
 ## **Bases de datos utilizadas:**
 
-### **Examen_Saber_11_20242:**
-Para este análisis se va a utilizar como base de datos principal "Examen_Saber_11_20242". Esta tiene los resultados de todos los estudiantes que presentaron el Examen Saber 11 en el período 2024-2. Por temas de peso, el archivo compartido en el repositorio solo incluye las variables generales de caracterización de estudiantes e instituciones educativas, y las correspondientes a Competencias Ciudadanas. Esto con el fin de poder cumplir con el rango de peso aceptado por GitHub.
+### **Ciudadanas:**
+Para este análisis se va a utilizar como base de datos principal "Ciudadanas", que sale de la base de datos "Examen_Saber_11_20242" de DataIcfes. Esta tiene los resultados de todos los estudiantes que presentaron el Examen Saber 11 en el período 2024-2. Por temas de peso, el archivo compartido en el repositorio solo incluye las variables generales de caracterización de estudiantes e instituciones educativas, y las correspondientes a Competencias Ciudadanas. Esto con el fin de poder cumplir con el rango de peso aceptado por GitHub.
 
 #### **Variables:**
 
-Para identificación del estudiante: estu_consecutivo
-
-Demográficas: estu_genero, estu_etnia, estu_cod_reside_mcpio
-
-Sección Competencias Ciudadanas: desemp_sociales_ciudadanas, percentil_sociales_ciudadanas, punt_sociales_ciudadanas.
-
-Puntaje global: punt_global.
-
-Tipo de colegio: cole_calendario, cole_naturaleza.
+```bash
+Ciudadanas/
+├── Para identificación del estudiante: estu_consecutivo
+├── Demográficas: estu_genero, estu_etnia, estu_cod_reside_mcpio
+├── Sección Competencias Ciudadanas: desemp_sociales_ciudadanas, percentil_sociales_ciudadanas, punt_sociales_ciudadanas
+├── Puntaje global: punt_global
+├── Tipo de colegio: cole_calendario, cole_naturaleza
+```
 
 ### **Municipios_PDET_20260601:**
 Como base de datos secundaria se va a utilizar "Municipios_PDET_20260601". Esta base de datos va a permitir crear los grupos de estudiantes PDET y NoPDET. 
 
 #### **Variables:** 
 
-Código del Municipio: CodigoMunicipio, esta se contrasta con estu_cod_reside_mcpio para crear la variable PDET.
+```bash
+Municipios_PDET/
+├── Código del Municipio: CodigoMunicipio, esta se contrasta con estu_cod_reside_mcpio para crear la variable PDET.
+```
 
 ## **Referencias:**
 
